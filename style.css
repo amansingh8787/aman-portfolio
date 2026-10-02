@@ -1,6 +1,6 @@
 /* ================================
    GENERAL SETTINGS
-================================ */
+ ================================ */
 
 * {
     margin: 0;
@@ -28,7 +28,7 @@ section {
 
 /* ================================
    NAVIGATION
-================================ */
+ ================================ */
 
 header {
     width: 100%;
@@ -82,7 +82,7 @@ footer span {
 
 /* ================================
    HERO
-================================ */
+ ================================ */
 
 .hero {
     min-height: 100vh;
@@ -90,8 +90,7 @@ footer span {
     display: flex;
     align-items: center;
     justify-content: center;
-
-    text-align: center;
+    gap: 50px;
 
     padding: 120px 20px 80px;
 
@@ -104,7 +103,12 @@ footer span {
 }
 
 .hero-content {
-    max-width: 850px;
+    max-width: 700px;
+    animation: fadeUp 0.7s ease forwards;
+}
+
+.hero-text {
+    max-width: 620px;
 }
 
 .welcome {
@@ -119,6 +123,7 @@ footer span {
     font-size: 65px;
     line-height: 1.1;
     margin-bottom: 20px;
+    animation: fadeUp 0.8s ease forwards;
 }
 
 .hero h1 span {
@@ -129,6 +134,7 @@ footer span {
     color: #cbd5e1;
     font-size: 26px;
     margin-bottom: 20px;
+    animation: fadeUp 0.9s ease forwards;
 }
 
 .hero p {
@@ -142,8 +148,9 @@ footer span {
     margin-top: 35px;
 
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 15px;
+    animation: fadeUp 1s ease forwards;
 }
 
 .btn {
@@ -158,11 +165,11 @@ footer span {
 
     font-weight: bold;
 
-    transition: 0.3s;
+    transition: 0.3s ease;
 }
 
 .btn:hover {
-    transform: translateY(-3px);
+    transform: translateY(-3px) scale(1.03);
     background: #7dd3fc;
 }
 
@@ -177,10 +184,41 @@ footer span {
     color: #07111f;
 }
 
+.hero-visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeUp 0.8s ease forwards;
+}
+
+.profile-frame {
+    width: 340px;
+    height: 340px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid rgba(56, 189, 248, 0.8);
+    box-shadow: 0 20px 40px rgba(56, 189, 248, 0.25);
+    background: #0f172a;
+    animation: float 2.5s ease-in-out infinite;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.profile-frame:hover {
+    transform: scale(1.04);
+    box-shadow: 0 25px 55px rgba(56, 189, 248, 0.4);
+}
+
+.profile-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
 
 /* ================================
    COMMON SECTION
-================================ */
+ ================================ */
 
 .section {
     max-width: 1100px;
@@ -219,7 +257,7 @@ footer span {
 
 /* ================================
    ABOUT
-================================ */
+ ================================ */
 
 .about-container {
     display: grid;
@@ -249,6 +287,12 @@ footer span {
     border-radius: 12px;
 
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.35s ease, border-color 0.35s ease;
+}
+
+.about-card:hover {
+    transform: translateY(-5px);
+    border-color: #38bdf8;
 }
 
 .about-card h3 {
@@ -264,7 +308,7 @@ footer span {
 
 /* ================================
    SKILLS
-================================ */
+ ================================ */
 
 .skills-section {
     max-width: 1200px;
@@ -289,17 +333,19 @@ footer span {
 
     text-align: center;
 
-    transition: 0.3s;
+    transition: transform 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
 }
 
 .skill-card:hover {
-    transform: translateY(-7px);
+    transform: translateY(-7px) scale(1.02);
     border-color: #38bdf8;
+    box-shadow: 0 15px 35px rgba(56, 189, 248, 0.12);
 }
 
 .skill-icon {
     font-size: 40px;
     margin-bottom: 15px;
+    animation: bounce 1.6s ease-in-out infinite;
 }
 
 .skill-card h3 {
@@ -314,7 +360,7 @@ footer span {
 
 /* ================================
    PROJECTS
-================================ */
+ ================================ */
 
 .projects-container {
     display: grid;
@@ -333,11 +379,11 @@ footer span {
 
     padding: 30px;
 
-    transition: 0.3s;
+    transition: transform 0.35s ease, border-color 0.35s ease;
 }
 
 .project-card:hover {
-    transform: translateY(-7px);
+    transform: translateY(-7px) scale(1.01);
     border-color: #38bdf8;
 }
 
@@ -382,6 +428,11 @@ footer span {
     font-size: 13px;
 
     font-weight: bold;
+    transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.project-btn:hover {
+    transform: translateY(-2px);
 }
 
 .github-btn {
@@ -395,7 +446,7 @@ footer span {
 
 /* ================================
    LEARNING
-================================ */
+ ================================ */
 
 .learning {
     background: #111827;
@@ -438,6 +489,11 @@ footer span {
     flex-direction: column;
 
     gap: 5px;
+    transition: transform 0.3s ease;
+}
+
+.learning-items div:hover {
+    transform: translateY(-4px);
 }
 
 .learning-items strong {
@@ -453,7 +509,7 @@ footer span {
 
 /* ================================
    CONTACT
-================================ */
+ ================================ */
 
 .contact-section {
     text-align: center;
@@ -481,17 +537,19 @@ footer span {
 
     border-radius: 12px;
 
-    transition: 0.3s;
+    transition: transform 0.35s ease, border-color 0.35s ease;
 }
 
 .contact-card:hover {
     border-color: #38bdf8;
+    transform: translateY(-5px);
 }
 
 .contact-icon {
     font-size: 35px;
 
     margin-bottom: 15px;
+    animation: pulse 1.6s ease-in-out infinite;
 }
 
 .contact-card h3 {
@@ -509,7 +567,7 @@ footer span {
 
 /* ================================
    FOOTER
-================================ */
+ ================================ */
 
 footer {
     background: #060b14;
@@ -544,11 +602,12 @@ footer {
 .social-links a {
     color: #94a3b8;
 
-    transition: 0.3s;
+    transition: 0.3s ease;
 }
 
 .social-links a:hover {
     color: #38bdf8;
+    transform: translateY(-2px);
 }
 
 .copyright {
@@ -557,8 +616,51 @@ footer {
 
 
 /* ================================
+   ANIMATIONS
+ ================================ */
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-6px);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.08);
+    }
+}
+
+
+/* ================================
    RESPONSIVE DESIGN
-================================ */
+ ================================ */
 
 @media (max-width: 800px) {
 
@@ -570,12 +672,26 @@ footer {
         font-size: 13px;
     }
 
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content,
+    .hero-text {
+        max-width: 100%;
+    }
+
     .hero h1 {
         font-size: 45px;
     }
 
     .hero h2 {
         font-size: 21px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
     }
 
     .about-container {
@@ -638,6 +754,11 @@ footer {
 
     .btn {
         width: 200px;
+    }
+
+    .profile-frame {
+        width: 260px;
+        height: 260px;
     }
 
     .skills-container {
