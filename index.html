@@ -4,465 +4,645 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Aman Singh | Portfolio</title>
+    <title>Aman Singh | Developer Portfolio</title>
 
     <link rel="stylesheet" href="style.css">
 
-    <!-- Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
 
-    <!-- Animated Background -->
-    <div class="background">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
+<!-- ================= TOP BAR ================= -->
+
+<header class="topbar">
+
+    <a href="#home" class="brand">
+        AMAN<span>.</span>
+    </a>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <a href="#contact" class="hire-btn">
+        Let's Talk <i class="fa-solid fa-arrow-up-right-from-square"></i>
+    </a>
+
+</header>
+
+
+<!-- ================= BACKGROUND ================= -->
+
+<div class="noise"></div>
+
+<div class="red-glow glow-one"></div>
+<div class="red-glow glow-two"></div>
+
+<div class="grid-bg"></div>
+
+
+<!-- ================= HERO ================= -->
+
+<section id="home" class="hero">
+
+    <div class="hero-left">
+
+        <div class="availability">
+            <span></span>
+            Available for opportunities
+        </div>
+
+        <p class="hero-small">HELLO, I'M</p>
+
+        <h1>
+            Aman
+            <strong>Singh.</strong>
+        </h1>
+
+        <div class="role">
+            <span>BUILDING</span>
+            <b> DIGITAL EXPERIENCES</b>
+        </div>
+
+        <p class="hero-text">
+            BCA student exploring Web Development, Python
+            and Cyber Security. I love learning new technologies
+            and turning ideas into real projects.
+        </p>
+
+
+        <div class="hero-buttons">
+
+            <a href="#projects" class="red-btn">
+                Explore My Work
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+            <!-- RESUME LINK -->
+            <a href="Aman_Singh_Resume.pdf"
+               target="_blank"
+               class="outline-btn">
+                <i class="fa-solid fa-file-arrow-down"></i>
+                Resume
+            </a>
+
+        </div>
+
+
+        <!-- SOCIAL LINKS -->
+
+        <div class="social-row">
+
+            <!-- GITHUB -->
+            <a href="https://github.com/amansingh8787"
+               target="_blank"
+               title="GitHub">
+
+                <i class="fa-brands fa-github"></i>
+
+            </a>
+
+
+            <!-- LINKEDIN -->
+            <a href="YOUR_LINKEDIN_LINK"
+               target="_blank"
+               title="LinkedIn">
+
+                <i class="fa-brands fa-linkedin-in"></i>
+
+            </a>
+
+
+            <!-- INSTAGRAM -->
+            <a href="YOUR_INSTAGRAM_LINK"
+               target="_blank"
+               title="Instagram">
+
+                <i class="fa-brands fa-instagram"></i>
+
+            </a>
+
+
+            <!-- EMAIL -->
+            <a href="mailto:your-email@example.com"
+               title="Email">
+
+                <i class="fa-solid fa-envelope"></i>
+
+            </a>
+
+        </div>
+
     </div>
 
-    <!-- NAVBAR -->
-    <header class="navbar">
-        <div class="logo">Aman<span>.</span></div>
 
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+    <!-- ================= PHOTO ================= -->
+
+    <div class="hero-right">
+
+        <div class="photo-label">
+            <span>01</span>
+            PROFILE
+        </div>
+
+        <div class="photo-wrapper">
+
+            <div class="photo-back"></div>
+
+            <div class="photo-card">
+
+                <!-- CHANGE PHOTO HERE -->
+                <img src="IMG_20260930_153302.jpg"
+                     alt="Aman Singh">
+
+            </div>
+
+            <div class="photo-circle"></div>
+
+        </div>
 
 
-    <!-- HERO -->
-    <section id="home" class="hero">
+        <div class="photo-info">
 
-        <div class="hero-content">
+            <span>BCA STUDENT</span>
 
-            <p class="small-text">WELCOME TO MY PORTFOLIO</p>
+            <span>•</span>
 
-            <h1>
-                Hi, I'm <span>Aman Singh</span>
-            </h1>
+            <span>DEVELOPER</span>
 
-            <h2>
-                I'm a <span id="typing"></span>
-            </h2>
+        </div>
 
-            <p class="hero-description">
-                BCA student passionate about Web Development,
-                Python, Cyber Security and modern technologies.
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about" class="about section">
+
+    <div class="section-number">01</div>
+
+    <div class="section-heading">
+
+        <p>ABOUT ME</p>
+
+        <h2>
+            Curious mind.
+            <span>Creative builder.</span>
+        </h2>
+
+    </div>
+
+
+    <div class="about-content">
+
+        <div class="about-main">
+
+            <p>
+                I'm <b>Aman Singh</b>, a BCA student passionate
+                about technology and software development.
             </p>
 
-            <div class="buttons">
-
-                <a href="#projects" class="btn primary">
-                    View Projects
-                </a>
-
-                <a href="Aman_Singh_Resume.pdf"
-                   class="btn secondary"
-                   target="_blank">
-                    <i class="fa-solid fa-download"></i>
-                    Resume
-                </a>
-
-            </div>
-
-
-            <!-- SOCIAL LINKS -->
-            <div class="social-links">
-
-                <a href="https://github.com/amansingh8787"
-                   target="_blank">
-                    <i class="fa-brands fa-github"></i>
-                </a>
-
-                <a href="YOUR_LINKEDIN_LINK"
-                   target="_blank">
-                    <i class="fa-brands fa-linkedin"></i>
-                </a>
-
-                <a href="YOUR_INSTAGRAM_LINK"
-                   target="_blank">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-
-                <a href="mailto:your-email@example.com">
-                    <i class="fa-solid fa-envelope"></i>
-                </a>
-
-            </div>
+            <p>
+                I enjoy creating websites, learning Python,
+                exploring Cyber Security and building projects
+                that help me understand technology through
+                practical experience.
+            </p>
 
         </div>
 
 
-        <!-- PROFILE PHOTO -->
-        <div class="hero-photo">
+        <div class="about-stats">
 
-            <div class="photo-ring">
-
-                <div class="photo-container">
-
-                    <img src="IMG_20260930_153302.jpg"
-                         alt="Aman Singh">
-
-                </div>
-
-            </div>
-
-            <div class="orbit orbit-one"></div>
-            <div class="orbit orbit-two"></div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ABOUT -->
-    <section id="about" class="section">
-
-        <div class="section-title">
-            <p>GET TO KNOW ME</p>
-            <h2>About <span>Me</span></h2>
-        </div>
-
-        <div class="about-box">
-
-            <div class="about-icon">
-                <i class="fa-solid fa-user"></i>
+            <div>
+                <strong>01</strong>
+                <span>Portfolio</span>
             </div>
 
             <div>
+                <strong>03+</strong>
+                <span>Projects</span>
+            </div>
 
-                <h3>Who I Am</h3>
-
-                <p>
-                    I'm Aman Singh, a BCA student interested in
-                    technology and software development.
-                    I enjoy creating websites, learning Python,
-                    exploring Cyber Security and building new projects.
-                </p>
-
-                <p>
-                    My goal is to continuously improve my technical
-                    skills and build useful real-world projects.
-                </p>
-
+            <div>
+                <strong>∞</strong>
+                <span>Learning</span>
             </div>
 
         </div>
 
-    </section>
+    </div>
+
+</section>
 
 
-    <!-- SKILLS -->
-    <section id="skills" class="section">
+<!-- ================= SKILLS ================= -->
 
-        <div class="section-title">
-            <p>MY TECHNOLOGIES</p>
-            <h2>My <span>Skills</span></h2>
-        </div>
+<section id="skills" class="skills section">
+
+    <div class="section-number">02</div>
+
+    <div class="section-heading">
+
+        <p>WHAT I USE</p>
+
+        <h2>
+            My <span>Tech Stack.</span>
+        </h2>
+
+    </div>
 
 
-        <div class="skills-grid">
+    <div class="skill-list">
 
-            <div class="skill-card">
+        <div class="skill">
+
+            <span>01</span>
+
+            <div class="skill-icon html">
                 <i class="fa-brands fa-html5"></i>
+            </div>
+
+            <div class="skill-name">
                 <h3>HTML</h3>
-                <p>Web Structure</p>
+                <p>Structure & Markup</p>
             </div>
 
-            <div class="skill-card">
+            <i class="fa-solid fa-arrow-up-right-from-square arrow"></i>
+
+        </div>
+
+
+        <div class="skill">
+
+            <span>02</span>
+
+            <div class="skill-icon css">
                 <i class="fa-brands fa-css3-alt"></i>
+            </div>
+
+            <div class="skill-name">
                 <h3>CSS</h3>
-                <p>Web Design</p>
+                <p>Design & Animation</p>
             </div>
 
-            <div class="skill-card">
+            <i class="fa-solid fa-arrow-up-right-from-square arrow"></i>
+
+        </div>
+
+
+        <div class="skill">
+
+            <span>03</span>
+
+            <div class="skill-icon js">
                 <i class="fa-brands fa-js"></i>
-                <h3>JavaScript</h3>
-                <p>Web Interaction</p>
             </div>
 
-            <div class="skill-card">
+            <div class="skill-name">
+                <h3>JavaScript</h3>
+                <p>Interactive Web</p>
+            </div>
+
+            <i class="fa-solid fa-arrow-up-right-from-square arrow"></i>
+
+        </div>
+
+
+        <div class="skill">
+
+            <span>04</span>
+
+            <div class="skill-icon python">
                 <i class="fa-brands fa-python"></i>
+            </div>
+
+            <div class="skill-name">
                 <h3>Python</h3>
                 <p>Programming</p>
             </div>
 
-            <div class="skill-card">
+            <i class="fa-solid fa-arrow-up-right-from-square arrow"></i>
+
+        </div>
+
+
+        <div class="skill">
+
+            <span>05</span>
+
+            <div class="skill-icon github">
                 <i class="fa-brands fa-github"></i>
+            </div>
+
+            <div class="skill-name">
                 <h3>GitHub</h3>
                 <p>Version Control</p>
             </div>
 
-            <div class="skill-card">
+            <i class="fa-solid fa-arrow-up-right-from-square arrow"></i>
+
+        </div>
+
+
+        <div class="skill">
+
+            <span>06</span>
+
+            <div class="skill-icon cyber">
                 <i class="fa-solid fa-shield-halved"></i>
-                <h3>Cyber Security</h3>
-                <p>Security Basics</p>
             </div>
 
+            <div class="skill-name">
+                <h3>Cyber Security</h3>
+                <p>Security Fundamentals</p>
+            </div>
+
+            <i class="fa-solid fa-arrow-up-right-from-square arrow"></i>
+
         </div>
 
-    </section>
+    </div>
+
+</section>
 
 
-    <!-- PROJECTS -->
-    <section id="projects" class="section">
+<!-- ================= PROJECTS ================= -->
 
-        <div class="section-title">
-            <p>MY WORK</p>
-            <h2>My <span>Projects</span></h2>
-        </div>
+<section id="projects" class="projects section">
+
+    <div class="section-number">03</div>
+
+    <div class="section-heading">
+
+        <p>SELECTED WORK</p>
+
+        <h2>
+            Things I've <span>built.</span>
+        </h2>
+
+    </div>
 
 
-        <div class="projects-grid">
+    <div class="project-list">
 
-            <div class="project-card">
 
-                <div class="project-icon">
-                    <i class="fa-solid fa-globe"></i>
-                </div>
+        <!-- PROJECT 01 -->
+
+        <article class="project">
+
+            <div class="project-number">
+                01
+            </div>
+
+            <div class="project-info">
+
+                <p>WEB DEVELOPMENT</p>
 
                 <h3>Personal Portfolio</h3>
 
-                <p>
-                    A modern responsive portfolio website
-                    created using HTML and CSS.
-                </p>
+                <span>
+                    A responsive personal portfolio website
+                    designed to showcase my skills, projects
+                    and professional profile.
+                </span>
 
-                <div class="project-buttons">
+                <div class="tags">
+                    <small>HTML</small>
+                    <small>CSS</small>
+                    <small>GitHub Pages</small>
+                </div>
+
+                <div class="project-links">
 
                     <a href="https://amansingh8787.github.io/aman-portfolio/"
                        target="_blank">
-                        Live Demo
+                        Live Website
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
                     </a>
 
                     <a href="https://github.com/amansingh8787/aman-portfolio"
                        target="_blank">
-                        GitHub
+                        Source Code
+                        <i class="fa-brands fa-github"></i>
                     </a>
 
                 </div>
 
             </div>
 
+            <div class="project-image portfolio-preview">
 
-            <div class="project-card">
+                <i class="fa-solid fa-code"></i>
 
-                <div class="project-icon">
-                    <i class="fa-solid fa-qrcode"></i>
-                </div>
+            </div>
+
+        </article>
+
+
+        <!-- PROJECT 02 -->
+
+        <article class="project">
+
+            <div class="project-number">
+                02
+            </div>
+
+            <div class="project-info">
+
+                <p>PYTHON PROJECT</p>
 
                 <h3>QR Code Generator</h3>
 
-                <p>
-                    A simple QR code generator project
-                    created using programming concepts.
-                </p>
+                <span>
+                    A simple Python project that generates
+                    QR codes from user-provided information.
+                </span>
 
-                <div class="project-buttons">
-
-                    <a href="#" target="_blank">
-                        Live Demo
-                    </a>
-
-                    <a href="#" target="_blank">
-                        GitHub
-                    </a>
-
+                <div class="tags">
+                    <small>Python</small>
+                    <small>QR Code</small>
                 </div>
 
-            </div>
+                <div class="project-links">
 
-
-            <div class="project-card">
-
-                <div class="project-icon">
-                    <i class="fa-solid fa-shield-halved"></i>
-                </div>
-
-                <h3>Cyber Security Project</h3>
-
-                <p>
-                    A beginner-level project based on
-                    Cyber Security concepts.
-                </p>
-
-                <div class="project-buttons">
-
-                    <a href="#" target="_blank">
-                        View
+                    <!-- ADD YOUR PROJECT LINK -->
+                    <a href="YOUR_QR_PROJECT_LINK"
+                       target="_blank">
+                        View Project
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
                     </a>
 
-                    <a href="#" target="_blank">
-                        GitHub
+                    <a href="YOUR_QR_GITHUB_LINK"
+                       target="_blank">
+                        Source Code
+                        <i class="fa-brands fa-github"></i>
                     </a>
 
                 </div>
 
             </div>
 
-        </div>
+            <div class="project-image qr-preview">
 
-    </section>
+                <i class="fa-solid fa-qrcode"></i>
 
+            </div>
 
-    <!-- CONTACT -->
-    <section id="contact" class="section contact-section">
-
-        <div class="section-title">
-            <p>GET IN TOUCH</p>
-            <h2>Contact <span>Me</span></h2>
-        </div>
+        </article>
 
 
-        <div class="contact-grid">
+        <!-- PROJECT 03 -->
 
-            <a href="mailto:your-email@example.com"
-               class="contact-card">
+        <article class="project">
 
-                <i class="fa-solid fa-envelope"></i>
+            <div class="project-number">
+                03
+            </div>
 
-                <div>
-                    <h3>Email</h3>
-                    <p>your-email@example.com</p>
+            <div class="project-info">
+
+                <p>CYBER SECURITY</p>
+
+                <h3>Security Project</h3>
+
+                <span>
+                    A beginner Cyber Security project created
+                    while learning security concepts and tools.
+                </span>
+
+                <div class="tags">
+                    <small>Cyber Security</small>
+                    <small>Kali Linux</small>
                 </div>
 
-            </a>
+                <div class="project-links">
 
+                    <a href="YOUR_PROJECT_LINK"
+                       target="_blank">
+                        View Project
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
 
-            <a href="https://github.com/amansingh8787"
-               target="_blank"
-               class="contact-card">
+                    <a href="YOUR_GITHUB_LINK"
+                       target="_blank">
+                        Source Code
+                        <i class="fa-brands fa-github"></i>
+                    </a>
 
-                <i class="fa-brands fa-github"></i>
-
-                <div>
-                    <h3>GitHub</h3>
-                    <p>github.com/amansingh8787</p>
                 </div>
 
-            </a>
+            </div>
+
+            <div class="project-image cyber-preview">
+
+                <i class="fa-solid fa-shield-halved"></i>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
 
 
-            <a href="YOUR_LINKEDIN_LINK"
-               target="_blank"
-               class="contact-card">
+<!-- ================= CONTACT ================= -->
 
-                <i class="fa-brands fa-linkedin"></i>
+<section id="contact" class="contact section">
 
-                <div>
-                    <h3>LinkedIn</h3>
-                    <p>Connect with me</p>
-                </div>
+    <div class="contact-box">
 
-            </a>
+        <p>HAVE A PROJECT IN MIND?</p>
 
-        </div>
+        <h2>
+            Let's build something
+            <span>great.</span>
+        </h2>
 
-    </section>
-
-
-    <!-- FOOTER -->
-    <footer>
-
-        <div class="footer-logo">
-            Aman<span>.</span>
-        </div>
-
-        <p>
-            © 2026 Aman Singh. All Rights Reserved.
+        <p class="contact-text">
+            I'm always interested in learning, creating
+            and connecting with new people.
         </p>
 
-        <div class="footer-social">
+
+        <a href="mailto:your-email@example.com"
+           class="big-email">
+
+            your-email@example.com
+
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+        </a>
+
+
+        <div class="contact-links">
 
             <a href="https://github.com/amansingh8787"
                target="_blank">
+
                 <i class="fa-brands fa-github"></i>
+                GitHub
+
             </a>
+
 
             <a href="YOUR_LINKEDIN_LINK"
                target="_blank">
+
                 <i class="fa-brands fa-linkedin"></i>
+                LinkedIn
+
             </a>
+
 
             <a href="YOUR_INSTAGRAM_LINK"
                target="_blank">
+
                 <i class="fa-brands fa-instagram"></i>
+                Instagram
+
             </a>
 
         </div>
 
-    </footer>
+    </div>
+
+</section>
 
 
-    <!-- TYPING ANIMATION -->
-    <script>
+<!-- ================= FOOTER ================= -->
 
-        const words = [
-            "Web Developer",
-            "Python Learner",
-            "Cyber Security Enthusiast",
-            "BCA Student"
-        ];
+<footer>
 
-        let wordIndex = 0;
-        let charIndex = 0;
-        let deleting = false;
+    <div>
+        © 2026 Aman Singh
+    </div>
 
-        const typing = document.getElementById("typing");
+    <div>
+        Built with HTML + CSS
+    </div>
 
-        function typeEffect() {
+    <a href="#home">
+        Back to top ↑
+    </a>
 
-            const currentWord = words[wordIndex];
+</footer>
 
-            if (!deleting) {
-
-                typing.textContent =
-                    currentWord.substring(0, charIndex + 1);
-
-                charIndex++;
-
-                if (charIndex === currentWord.length) {
-
-                    deleting = true;
-
-                    setTimeout(typeEffect, 1500);
-                    return;
-                }
-
-            } else {
-
-                typing.textContent =
-                    currentWord.substring(0, charIndex - 1);
-
-                charIndex--;
-
-                if (charIndex === 0) {
-
-                    deleting = false;
-
-                    wordIndex++;
-
-                    if (wordIndex === words.length) {
-                        wordIndex = 0;
-                    }
-
-                }
-
-            }
-
-            setTimeout(typeEffect, deleting ? 60 : 100);
-        }
-
-        typeEffect();
-
-    </script>
 
 </body>
 </html>
