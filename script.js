@@ -54,7 +54,7 @@ if (reduce) { document.body.classList.remove("lock"); document.body.classList.ad
 else {
   let n = 0; const t0 = performance.now();
   (function step(now) {
-    n = Math.min(100, Math.round((now - t0) / 14));
+    n = Math.min(100, Math.round((now - t0) / 5));
     $("preBar").style.width = n + "%"; $("preNum").textContent = n + "%";
     n < 100 ? requestAnimationFrame(step) : setTimeout(startSite, 250);
   })(t0);
@@ -98,7 +98,7 @@ let W, H, pts = [], mouse = { x: -999, y: -999 }, gx = innerWidth / 2, gy = inne
 function resize() {
   const d = Math.min(devicePixelRatio || 1, 2); W = innerWidth; H = innerHeight;
   cv.width = W * d; cv.height = H * d; ctx.setTransform(d, 0, 0, d, 0, 0);
-  pts = Array.from({ length: Math.min(90, Math.floor(W * H / 16000)) }, () => ({ x: Math.random() * W, y: Math.random() * H, vx: (Math.random() - .5) * .4, vy: (Math.random() - .5) * .4 }));
+  pts = Array.from({ length: Math.min(40, Math.floor(W * H / 16000)) }, () => ({ x: Math.random() * W, y: Math.random() * H, vx: (Math.random() - .5) * .4, vy: (Math.random() - .5) * .4 }));
 }
 addEventListener("resize", resize); resize();
 addEventListener("pointermove", e => { mouse.x = e.clientX; mouse.y = e.clientY; });
